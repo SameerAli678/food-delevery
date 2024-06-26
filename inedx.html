@@ -5,22 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Config -->
     <script>
       tailwind.config = {
         theme: {
           extend: {
             colors: {
               red: "#EB0029",
+              black: "#333333",
+              white: "#F2F2F2",
+            },
+            fontFamily: {
+              poppins: ["Poppins", "sans-serif"],
             },
           },
         },
       };
     </script>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <!-- Title -->
     <title>Food Delivery</title>
   </head>
-  <body class="px-6 lg:px-24">
+  <body class="px-6 lg:px-24 font-poppins text-black">
     <!-- Navbar Start -->
-    <div></div>
+    <nav class="flex justify-between py-6 items-center">
+      <!-- Logo -->
+      <img
+        src="./img/logo.svg"
+        alt="logo"
+        class="w-[182px] h-[45px] cursor-pointer"
+      />
+
+      <!-- Page Links -->
+      <ul class="hidden md:flex text-black font-semibold text-sm flex gap-x-5">
+        <li class="text-red cursor-pointer">Why Foodeli?</li>
+        <li class="cursor-pointer">
+          Services
+          <i class="fa-solid fa-angle-down text-red"></i>
+        </li>
+        <li class="cursor-pointer">
+          Menu
+          <i class="fa-solid fa-angle-down text-red"></i>
+        </li>
+        <li class="cursor-pointer">Contact</li>
+      </ul>
+
+      <!-- Hum burger -->
+      <i class="fa-solid fa-burger text-red md:hidden flex text-xl"></i>
+
+      <!-- Login Section  -->
+      <div class="flex items-center gap-x-5 hidden md:flex">
+        <i class="fa-solid fa-magnifying-glass text-xl cursor-pointer"></i>
+        <i class="fa-solid fa-bag-shopping text-xl cursor-pointer"></i>
+        <button
+          class="bg-red text-white py-3 px-5 rounded-full text-sm font-semibold gap-x-2 flex items-center"
+        >
+          <i class="fa-solid fa-arrow-right-to-bracket"></i>
+          Login
+        </button>
+      </div>
+    </nav>
     <!-- Navbar End -->
   </body>
 </html>
