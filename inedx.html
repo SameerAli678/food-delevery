@@ -14,15 +14,22 @@
             colors: {
               red: "#EB0029",
               black: "#333333",
+              "dark-black": "#010F1C",
               white: "#F2F2F2",
-            },
-            fontFamily: {
-              poppins: ["Poppins", "sans-serif"],
             },
           },
         },
       };
     </script>
+
+    <!-- Style -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+      * {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
 
     <!-- Font Awesome -->
     <link
@@ -73,5 +80,63 @@
       </div>
     </nav>
     <!-- Navbar End -->
+
+    <!-- Hero Section Start -->
+    <section></section>
+    <!-- Hero Section End -->
+
+    <!-- About Section Start -->
+    <section class="space-y-2 text-center">
+      <!-- Headings -->
+      <h3 class="text-red font-semibold text-lg font-poppins">WHAT WE SERVE</h3>
+      <h1 class="text-dark-black text-[45px] font-bold">
+        Your Favourite Food <br />
+        Delivery Partner
+      </h1>
+
+      <!-- Feature Section -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-10 py-6">
+        <div class="w-full h-full flex flex-col justify-between">
+          <img src="./img/Order food-pana 1.png" alt="" />
+          <div class="space-y-2">
+            <h1
+              class="text-dark-black lg:font-bold font-semibold lg:text-[28px] text-lg"
+            >
+              Easy To Order
+            </h1>
+            <p class="text-black text-lg">
+              You only need a few steps in ordering food
+            </p>
+          </div>
+        </div>
+        <div class="w-full h-full space-y-2">
+          <img src="./img/Take Away-rafiki 1.png" alt="" />
+          <h1
+            class="text-dark-black lg:font-bold font-semibold lg:text-[28px] text-lg"
+          >
+            Fastest Delivery
+          </h1>
+          <p class="text-black text-lg">
+            Delivery that is always ontime even faster
+          </p>
+        </div>
+        <div class="w-full h-full space-y-2">
+          <img src="./img/Waiters-rafiki 1.png" alt="" />
+          <h1
+            class="text-dark-black lg:font-bold font-semibold lg:text-[28px] text-lg"
+          >
+            Best Quality
+          </h1>
+          <p class="text-black text-lg">
+            Not only fast for us quality is also number one
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Footer Start -->
+    <footer></footer>
+    <!-- Footer End -->
   </body>
 </html>
