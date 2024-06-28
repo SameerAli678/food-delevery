@@ -17,6 +17,7 @@
               "dark-black": "#010F1C",
               white: "#F2F2F2",
               "light-gray": "#BDBDBD",
+              "dark-gray": "#828282",
             },
             backgroundImage: {
               send: "url('./img/send.svg')",
@@ -44,7 +45,7 @@
     <!-- Title -->
     <title>Food Delivery</title>
   </head>
-  <body class="px-6 lg:px-24 font-poppins text-black">
+  <body class="px-6 lg:px-24 font-poppins text-black space-y-10 lg:space-y-20">
     <!-- Navbar Start -->
     <nav class="flex justify-between py-6 items-center">
       <!-- Logo -->
@@ -140,6 +141,62 @@
       </div>
     </section>
     <!-- About Section End -->
+
+    <!-- Customers Review Section Start -->
+    <section class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
+      <div class="h-full max-h-[751px] relative">
+        <img src="./img/chef.png" alt="" width="661" height="700" />
+        <img
+          src="./img/user-card.png"
+          alt="user-card"
+          class="absolute bottom-0 right-0 rounded-xl md:w-[200px] sm:w-[250px] xl:w-[263px] w-[163px]"
+        />
+        <img
+          src="./img/onion.svg"
+          alt="onion"
+          width="105"
+          height="60"
+          class="absolute top-20 left-14"
+        />
+      </div>
+      <div class="h-fit space-y-4">
+        <h3
+          class="text-red font-semibold text-lg font-poppins text-center lg:text-start"
+        >
+          WHAT THEY SAY
+        </h3>
+        <h1
+          class="text-dark-black lg:text-[45px] text-2xl leading-normal font-bold text-center lg:text-start"
+        >
+          What Our Customers <br />
+          Say About Us
+        </h1>
+        <p class="max-w-[505px] text-base font-semibold text-xl">
+          “Fudo is the best. Besides the many and delicious meals, the service
+          is also very good, especially in the very fast delivey. I highly
+          recommend Fudo to you”.
+        </p>
+
+        <!-- Avatar section -->
+        <div class="flex gap-x-4 items-center">
+          <img src="./img/avatar.png" alt="" width="64" height="64" />
+          <div class="space-y-2">
+            <h2 class="text-black text-xl font-semibold">Theresa Jordan</h2>
+            <h3 class="text-base font-semibold text-dark-gray">
+              Food Enthusiast
+            </h3>
+          </div>
+        </div>
+
+        <div
+          class="flex gap-x-4 items-center text-base font-semibold text-black"
+        >
+          <img src="./img/stars.png" alt="" width="171" height="24" />
+          <p>4,8</p>
+        </div>
+      </div>
+    </section>
+    <!-- Customers Review Section End -->
 
     <!-- Footer Start -->
     <footer class="grid sm:grid-cols-2 lg:grid-cols-5 py-6 gap-6">
